@@ -1,0 +1,5 @@
+# Ignore config files
+config.php
+
+# Ignore other sensitive files if needed
+.env

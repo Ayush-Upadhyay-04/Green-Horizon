@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Green Horizon Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e9f5ec;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #4CAF50, #66bb6a);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .blog-container {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .blog-post {
+      background-color: white;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.15);
+    }
+
+    .blog-post h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .blog-post .date {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 1rem;
+    }
+
+    .blog-post p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+
+    .image-gallery img {
+      width: 350px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05) rotate3d(1, 1, 0, 8deg);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .image-gallery img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Green Horizon Newsroom</h1>
+    <p>Stay updated with our latest E-Waste initiatives</p>
+  </header>
+
+  <div class="blog-container">
+
+    <!-- 📰 Event 1 with Gallery -->
+    <div class="blog-post">
+      <h2>College E-Waste Collection Drive 2025</h2>
+      <div class="date">April 04, 2025</div>
+      <p>We conducted a powerful e-waste collection drive at Shree L.R Tiwari College Of Engineering. Volunteers and students helped collect over 500kg of unused electronics, ensuring safe recycling and promoting awareness.</p>
+
+      <div class="image-gallery">
+        <img src="images/Event 1.jpg" alt="Photo 1">
+        <img src="images/Event1b.jpg" alt="Photo 2">
+        <img src="images/Event1c.jpg" alt="Photo 3">
+      </div>
+    </div>
+
+    <!-- 📰 Event 2 -->
+    <div class="blog-post">
+      <h2>Workshop on E-Waste Awareness</h2>
+      <div class="date">April 20, 2025</div>
+      <p>We hosted a knowledge-sharing session at ABC School where students were educated on the hazards of improper e-waste disposal and how to reduce digital trash at the root level.</p>
+
+      <div class="image-gallery">
+        <img src="images/Event2a.jpg" alt="Workshop Photo 1">
+        <img src="images/image.png" alt="Workshop Photo 2">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
